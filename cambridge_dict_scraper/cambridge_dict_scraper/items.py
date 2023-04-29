@@ -7,6 +7,8 @@ import scrapy
 
 
 class CambridgeDictScraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    word=scrapy.Field()
+    part_of_speech=scrapy.Field()
+    synonym=scrapy.Field()
+    definition=scrapy.Field()
+    examples=scrapy.Field()

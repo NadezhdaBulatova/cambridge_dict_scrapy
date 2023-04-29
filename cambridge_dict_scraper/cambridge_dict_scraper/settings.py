@@ -7,6 +7,18 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+# import environ
+# import os
+# from pathlib import Path
+
+from dotenv import load_dotenv
+load_dotenv()
+
+# BASE_DIR = Path(__file__).resolve().parent.parent
+
+# env = environ.Env()
+# environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
 BOT_NAME = "cambridge_dict_scraper"
 
 SPIDER_MODULES = ["cambridge_dict_scraper.spiders"]
@@ -45,15 +57,20 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    "cambridge_dict_scraper.middlewares.CambridgeDictScraperSpiderMiddleware": 543,
-#}
+# SPIDER_MIDDLEWARES = {
+#    # "cambridge_dict_scraper.middlewares.CambridgeDictScraperSpiderMiddleware": 543,
+#    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#    #  'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+#    "cambridge_dict_scraper.middlewares.UserAgentRotationMiddleware": 400,
+   
+# }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    "cambridge_dict_scraper.middlewares.CambridgeDictScraperDownloaderMiddleware": 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   # "cambridge_dict_scraper.middlewares.CambridgeDictScraperDownloaderMiddleware": 543,
+   "cambridge_dict_scraper.middlewares.UserAgentRotationMiddleware": 400,
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -63,9 +80,9 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "cambridge_dict_scraper.pipelines.CambridgeDictScraperPipeline": 300,
-#}
+ITEM_PIPELINES = {
+   'cambridge_dict_scraper.pipelines.CambridgeDictScraperPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
