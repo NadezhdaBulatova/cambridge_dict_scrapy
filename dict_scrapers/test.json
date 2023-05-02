@@ -1,0 +1,83 @@
+[
+  {
+    "word": "vragen",
+    "part_of_speech": " werkw.",
+    "en_definition": "ask, enquire",
+    "nl_definition": "(tegen iemand) (iets) in de vorm van een vraag (1) zeggen",
+    "examples": [
+      {
+        "en": "He asked if I come here more often.",
+        "nl": "Hij vroeg of ik hier vaker kwam."
+      },
+      {
+        "en": "Don't ask me why, that's just the way it is.",
+        "nl": "Vraag me niet waarom, het is nu eenmaal zo."
+      },
+      {
+        "en": "She looked at me questioningly.",
+        "nl": "Ze keek me vragend aan."
+      }
+    ],
+    "idioms": [
+      {
+        "expression": "iemand het hemd van het lijf vragen",
+        "en_definition": "ask too many questions",
+        "nl_definition": "(=iemand heel veel vragen stellen over iets)"
+      },
+      {
+        "expression": "als ik vragen mag",
+        "en_definition": "if I may ask",
+        "nl_definition": "(=<dit voeg je toe aan een vraag die je wat minder bot of streng wil laten klinken>)",
+        "en_example": "What are you doing here, may I ask?",
+        "nl_example": "What are you doing here, may I ask?"
+      },
+      {
+        "expression": "als je het mij vraagt",
+        "en_definition": "if you ask me",
+        "nl_definition": "(=volgens mij)"
+      },
+      {
+        "expression": "naar iemand vragen",
+        "en_definition": "enquire about somebody",
+        "nl_definition": "(=vragen of iemand aanwezig is of hoe het met iemand gaat)",
+        "en_example": "Did she enquire about me?",
+        "nl_example": "Did she enquire about me?"
+      }
+    ]
+  },
+  {
+    "word": "vragen",
+    "part_of_speech": " werkw.",
+    "en_definition": "ask, request",
+    "nl_definition": "(tegen iemand) (iets) in de vorm van een verzoek zeggen",
+    "examples": [
+      {
+        "en": "He asked me to come a little earlier.",
+        "nl": "Hij vroeg mij wat eerder te komen."
+      },
+      { "en": "ask for money", "nl": "(om) geld vragen" }
+    ],
+    "idioms": [
+      {
+        "expression": "(...) is vragen om problemen.",
+        "en_definition": "( ... ) is asking for trouble",
+        "nl_definition": "(=(...) is onvoorzichtig, leidt waarschijnlijk tot problemen)",
+        "en_example": "Drunken driving is asking for problems.",
+        "nl_example": "Drunken driving is asking for problems."
+      }
+    ]
+  },
+  {
+    "word": "vragen",
+    "part_of_speech": " werkw.",
+    "en_definition": "ask, need, take",
+    "nl_definition": "nodig hebben",
+    "examples": [
+      {
+        "en": "Developing skills requires time.",
+        "nl": "Het trainen van vaardigheden vraagt tijd."
+      }
+    ],
+    "idioms": []
+  }
+]
